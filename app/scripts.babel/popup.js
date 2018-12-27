@@ -26,7 +26,6 @@ import {
   MdDialog,
   MdTable,
   MdTableToolbar,
-  MdTableEmptyState
 } from 'vue-material/dist/components';
 
 
@@ -49,7 +48,6 @@ Vue.use(MdDatepicker);
 Vue.use(MdDialog);
 Vue.use(MdTable);
 Vue.use(MdTableToolbar);
-Vue.use(MdTableEmptyState);
 new Vue({
   el: '#app',
   components: {

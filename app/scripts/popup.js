@@ -12089,7 +12089,6 @@ _vue2.default.use(_components.MdDatepicker);
 _vue2.default.use(_components.MdDialog);
 _vue2.default.use(_components.MdTable);
 _vue2.default.use(_components.MdTableToolbar);
-_vue2.default.use(_components.MdTableEmptyState);
 new _vue2.default({
   el: '#app',
   components: {
@@ -12904,9 +12903,6 @@ module.exports = {
     }
   }
 }; //
-//
-//
-//
 //
 //
 //
@@ -14680,12 +14676,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "search"
     }
-  })], 1)], 1), _vm._v(" "), _c('md-table-empty-state', {
-    attrs: {
-      "md-label": "No users found",
-      "md-description": ("No user found for this '" + _vm.search + "' query. Try a different search term or create a new user.")
-    }
-  })], 1)], 1), _vm._v(" "), _c('div', {
+  })], 1)], 1)], 1)], 1), _vm._v(" "), _c('div', {
     staticClass: "md-layout-item"
   })])])], 1)], 1)
 },staticRenderFns: []}
