@@ -21,7 +21,12 @@ import {
   MdApp,
   MdDrawer,
   MdButton,
-  MdContent
+  MdContent,
+  MdDatepicker,
+  MdDialog,
+  MdTable,
+  MdTableToolbar,
+  MdTableEmptyState
 } from 'vue-material/dist/components';
 
 
@@ -40,8 +45,11 @@ Vue.use(MdApp);
 Vue.use(MdDrawer);
 Vue.use(MdButton);
 Vue.use(MdContent);
-
-
+Vue.use(MdDatepicker);
+Vue.use(MdDialog);
+Vue.use(MdTable);
+Vue.use(MdTableToolbar);
+Vue.use(MdTableEmptyState);
 new Vue({
   el: '#app',
   components: {
