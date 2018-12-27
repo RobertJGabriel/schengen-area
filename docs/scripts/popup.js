@@ -12436,7 +12436,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -12823,8 +12823,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 module.exports = {
   data: function data() {
     return {
-      title: '',
-      editor: _strings2.default.markdownString()
+      date: null
     };
   },
   watch: {},
@@ -14515,7 +14514,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "md-title"
   }, [_vm._v("When did you fly to europe?")])]), _vm._v(" "), _c('md-card-content', [_c('div', {
     staticClass: "md-layout md-gutter"
-  }, [_c('md-field', [_c('md-icon', [_vm._v("event")]), _vm._v(" "), _c('label', [_vm._v("Date")]), _vm._v(" "), _c('md-input', {
+  }, [_c('md-field', [_c('md-icon', [_vm._v("event")]), _vm._v(" "), _c('label', [_vm._v("When did you fly to europe?")]), _vm._v(" "), _c('md-input', {
     model: {
       value: (_vm.date),
       callback: function($$v) {
@@ -14523,7 +14522,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "date"
     }
-  })], 1), _vm._v(" "), _c('md-field', [_c('md-icon', [_vm._v("flight_takeoff")]), _vm._v(" "), _c('label', [_vm._v("You must leave Europe by.")])], 1), _vm._v(" "), _c('md-field', [_c('md-icon', [_vm._v("flight_land")]), _vm._v(" "), _c('label', [_vm._v("You can fly back on.")])], 1)], 1)])], 1)], 1)]), _vm._v(" "), _c('div', {
+  })], 1), _vm._v(" "), _c('div', [_c('md-icon', [_vm._v("flight_takeoff")]), _vm._v(" "), _c('span', [_vm._v("You must leave Europe")])], 1), _vm._v(" "), _c('div', [_c('md-icon', [_vm._v("flight_land")]), _vm._v(" "), _c('span', [_vm._v("You can fly back on")])], 1)], 1)])], 1)], 1)]), _vm._v(" "), _c('div', {
     staticClass: "md-layout-item"
   })])])], 1)], 1)
 },staticRenderFns: []}

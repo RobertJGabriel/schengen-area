@@ -31,22 +31,22 @@
                   <div class="md-layout md-gutter">
                     <md-field>
                       <md-icon>event</md-icon>
-                      <label>Date</label>
+                      <label>When did you fly to europe?</label>
                       <md-input v-model="date"></md-input>
                     </md-field>
 
 
                     <md-field>
                       <md-icon>flight_takeoff</md-icon>
-                      <label>You must leave Europe by.</label>
-
+                      <label>You must leave Europe</label>
+                      <span></span>
                     </md-field>
 
 
                     <md-field>
                       <md-icon>flight_land</md-icon>
-                      <label>You can fly back on.</label>
-
+                      <label>You can fly back on</label>
+                      <span></span>
                     </md-field>
                   </div>
                 </md-card-content>
@@ -77,8 +77,7 @@
   module.exports = {
     data: function () {
       return {
-        title: '',
-        editor: Strings.markdownString()
+        date: null,
       }
     },
     watch: {},
