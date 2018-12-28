@@ -12088,7 +12088,8 @@ _vue2.default.use(_components.MdContent);
 _vue2.default.use(_components.MdDatepicker);
 _vue2.default.use(_components.MdDialog);
 _vue2.default.use(_components.MdTable);
-_vue2.default.use(_components.MdTableToolbar);
+_vue2.default.use(_components.MdEmptyState);
+_vue2.default.use(_components.MdRipple);
 new _vue2.default({
   el: '#app',
   components: {
@@ -12828,38 +12829,11 @@ module.exports = {
     return {
       date: new Date(2018, 9, 16),
       search: null,
-      searched: [],
-      users: [{
-        id: 1,
-        name: "Shawna Dubbin",
-        email: "sdubbin0@geocities.com",
-        gender: "Male",
-        title: "Assistant Media Planner"
-      }, {
-        id: 2,
-        name: "Odette Demageard",
-        email: "odemageard1@spotify.com",
-        gender: "Female",
-        title: "Account Coordinator"
-      }, {
-        id: 3,
-        name: "Vera Taleworth",
-        email: "vtaleworth2@google.ca",
-        gender: "Male",
-        title: "Community Outreach Specialist"
-      }, {
-        id: 4,
-        name: "Lonnie Izkovitz",
-        email: "lizkovitz3@youtu.be",
-        gender: "Female",
-        title: "Operator"
-      }]
+      searched: []
     };
   },
 
-  mounted: function mounted() {
-    this.loadData();
-  },
+  mounted: function mounted() {},
   computed: {
     // a computed getter
     returnDate: function returnDate() {
@@ -12872,23 +12846,6 @@ module.exports = {
     }
   },
   methods: {
-    searchOnTable: function searchOnTable() {
-      this.searched = this.searchByName(this.users, this.search);
-    },
-
-    searchByName: function searchByName(items, term) {
-      var _this = this;
-
-      if (term) {
-        return items.filter(function (item) {
-          return _this.toLower(item.name).includes(_this.toLower(term));
-        });
-      }
-      return items;
-    },
-    toLower: function toLower(text) {
-      return text.toString().toLowerCase();
-    },
     addDays: function addDays(date, days) {
       var result = new Date(date);
       result.setDate(result.getDate() + days);
@@ -12897,35 +12854,9 @@ module.exports = {
     goTo: function goTo(url) {
       if (url === undefined || url.trim() === '') return false;
       window.location.href = url;
-    },
-    loadData: function loadData() {
-      // Check if local storage is enabled
     }
   }
 }; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -14580,12 +14511,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "md-layout",
     attrs: {
       "novalidate": ""
-    },
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        return _vm.validateUser($event)
-      }
     }
   }, [_c('md-card', {
     staticClass: "md-layout-item  md-small-size-100"
@@ -14605,78 +14530,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "md-list-item-text"
   }, [_c('b', [_vm._v(_vm._s(_vm.mustLeave))])])], 1), _vm._v(" "), _c('md-list-item', [_c('md-icon', [_vm._v("flight_land")]), _vm._v(" "), _c('label', [_vm._v("You can fly back on ")]), _vm._v(" "), _c('span', {
     staticClass: "md-list-item-text"
-  }, [_c('b', [_vm._v(_vm._s(_vm.returnDate))])])], 1)], 1)], 1)])], 1)], 1), _vm._v(" "), _c('md-table', {
-    attrs: {
-      "md-sort": "name",
-      "md-sort-order": "asc",
-      "md-card": "",
-      "md-fixed-header": ""
-    },
-    scopedSlots: _vm._u([{
-      key: "md-table-row",
-      fn: function(ref) {
-        var item = ref.item;
-
-        return _c('md-table-row', {}, [_c('md-table-cell', {
-          attrs: {
-            "md-label": "ID",
-            "md-sort-by": "id",
-            "md-numeric": ""
-          }
-        }, [_vm._v(_vm._s(item.id))]), _vm._v(" "), _c('md-table-cell', {
-          attrs: {
-            "md-label": "Name",
-            "md-sort-by": "name"
-          }
-        }, [_vm._v(_vm._s(item.name))]), _vm._v(" "), _c('md-table-cell', {
-          attrs: {
-            "md-label": "Email",
-            "md-sort-by": "email"
-          }
-        }, [_vm._v(_vm._s(item.email))]), _vm._v(" "), _c('md-table-cell', {
-          attrs: {
-            "md-label": "Gender",
-            "md-sort-by": "gender"
-          }
-        }, [_vm._v(_vm._s(item.gender))]), _vm._v(" "), _c('md-table-cell', {
-          attrs: {
-            "md-label": "Job Title",
-            "md-sort-by": "title"
-          }
-        }, [_vm._v(_vm._s(item.title))])], 1)
-      }
-    }]),
-    model: {
-      value: (_vm.searched),
-      callback: function($$v) {
-        _vm.searched = $$v
-      },
-      expression: "searched"
-    }
-  }, [_c('md-table-toolbar', [_c('div', {
-    staticClass: "md-toolbar-section-start"
-  }, [_c('h1', {
-    staticClass: "md-title"
-  }, [_vm._v("Users")])]), _vm._v(" "), _c('md-field', {
-    staticClass: "md-toolbar-section-end",
-    attrs: {
-      "md-clearable": ""
-    }
-  }, [_c('md-input', {
-    attrs: {
-      "placeholder": "Search by name..."
-    },
-    on: {
-      "input": _vm.searchOnTable
-    },
-    model: {
-      value: (_vm.search),
-      callback: function($$v) {
-        _vm.search = $$v
-      },
-      expression: "search"
-    }
-  })], 1)], 1)], 1)], 1), _vm._v(" "), _c('div', {
+  }, [_c('b', [_vm._v(_vm._s(_vm.returnDate))])])], 1)], 1)], 1)])], 1)], 1)]), _vm._v(" "), _c('div', {
     staticClass: "md-layout-item"
   })])])], 1)], 1)
 },staticRenderFns: []}
