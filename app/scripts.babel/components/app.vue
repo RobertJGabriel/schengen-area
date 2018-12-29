@@ -1,7 +1,7 @@
 <template>
   <div class="page-container">
     <md-app>
-      <md-app-toolbar class="md-primary">
+      <md-app-toolbar class="md-primary md-dense md-accent" md-elevation="1">
         <div class="md-toolbar-row">
           <span class="md-title">Schengen Area</span>
           <div class="md-toolbar-section-end">
@@ -113,10 +113,6 @@
 
 
 <style scoped>
-  .md-list-item {
-    height: fit-content;
-  }
-
   label {
     padding-right: 0.5rem;
   }
