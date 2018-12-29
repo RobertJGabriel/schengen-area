@@ -12440,7 +12440,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\nlabel[data-v-5bf7f4b8] {\n  padding-right: 0.5rem;\n}\n.md-card[data-v-5bf7f4b8] {\n  width: 320px;\n  margin: 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n.md-card-example .md-subhead .md-icon[data-v-5bf7f4b8] {\n  width: 16px;\n  min-width: 16px;\n  height: 16px;\n  font-size: 16px !important;\n}\n.md-card-example .md-subhead span[data-v-5bf7f4b8] {\n  vertical-align: middle;\n}\n.md-card-example .card-reservation[data-v-5bf7f4b8] {\n  margin-top: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.md-card-example .card-reservation .md-icon[data-v-5bf7f4b8] {\n  margin: 8px;\n}\n.md-card-example .md-button-group[data-v-5bf7f4b8] {\n  display: flex;\n}\n.md-card-example .md-button-group .md-button[data-v-5bf7f4b8] {\n  min-width: 60px;\n  border-radius: 2px;\n}\n", ""]);
+exports.push([module.i, "\nlabel[data-v-5bf7f4b8] {\n  padding-right: 0.5rem;\n}\n.md-card-example .md-subhead .md-icon[data-v-5bf7f4b8] {\n  width: 16px;\n  min-width: 16px;\n  height: 16px;\n  font-size: 16px !important;\n}\n.md-card-example .md-subhead[data-v-5bf7f4b8]  {\n  vertical-align: middle;\n}\n.md-card-example .card-reservation[data-v-5bf7f4b8] {\n  margin-top: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.md-card-example .card-reservation .md-icon[data-v-5bf7f4b8] {\n  margin: 8px;\n}\n.md-card-example .md-button-group[data-v-5bf7f4b8] {\n  display: flex;\n}\n.md-card-example .md-button-group .md-button[data-v-5bf7f4b8] {\n  min-width: 60px;\n  border-radius: 2px;\n}\n", ""]);
 
 // exports
 
@@ -12857,25 +12857,6 @@ module.exports = {
     }
   }
 }; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -14563,15 +14544,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "md-title"
   }, [_vm._v(" What is it?")]), _vm._v(" "), _c('div', {
     staticClass: "md-subhead"
-  }, [_vm._v("\n                    The Schengen area is a made up of 26 European countries that agreed to create common entry and exit\n                    requirements in order to remove the need for internal borders. As long as Schengen area entry\n                    requirements are met, the agreement allows foreigners to travel freely between participating\n                    countries without having to go through border controls (some exceptions apply, see below).\n                  ")])]), _vm._v(" "), _c('md-card-header', [_c('h2', {
+  }, [_vm._v("\n                  The Schengen area is a made up of 26 European countries that agreed to create common entry and exit\n                  requirements in order to remove the need for internal borders. As long as Schengen area entry\n                  requirements are met, the agreement allows foreigners to travel freely between participating\n                  countries without having to go through border controls (some exceptions apply, see below).\n                ")])]), _vm._v(" "), _c('md-card-header', [_c('h2', {
     staticClass: "md-title"
   }, [_vm._v(" Schengen area countries")]), _vm._v(" "), _c('div', {
     staticClass: "md-subhead"
-  }, [_vm._v("\n                    Austria, Belgium, the Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary,\n                    Iceland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, the Netherlands, Norway,\n                    Poland, Portugal, Slovakia, Slovenia, Spain, Sweden and Switzerland.\n                  ")])]), _vm._v(" "), _c('md-card-header', [_c('h2', {
+  }, [_vm._v("\n                  Austria, Belgium, the Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary,\n                  Iceland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, the Netherlands, Norway,\n                  Poland, Portugal, Slovakia, Slovenia, Spain, Sweden and Switzerland.\n                ")])]), _vm._v(" "), _c('md-card-header', [_c('h2', {
     staticClass: "md-title"
   }, [_vm._v(" EU member states with opt-outs")]), _vm._v(" "), _c('div', {
     staticClass: "md-subhead"
-  }, [_vm._v("\n                   Upon the creation of the Schengen Area, most of the countries that were members of the European Union block, signed the agreement. However, two of the following opted out:\n\nthe Republic of Ireland\nthe United Kingdom\nBoth of them maintain a Common Travel Area with passport-free travel for their citizens between them and the three British Crown Dependencies of Jersey, Guernsey and the Isle of Man, which are outside the European Union. As per Gibraltar, which is a British Overseas Territory, it is neither part of the Schengen Area nor the Common Travel Area.\n                  ")])])], 1)], 1)], 1), _vm._v(" "), _c('div', {
+  }, [_vm._v("\n                  Upon the creation of the Schengen Area, most of the countries that were members of the European\n                  Union block, signed the agreement. However, two of the following opted out:\n                  the Republic of Ireland\n                  the United Kingdom\n                  Both of them maintain a Common Travel Area with passport-free travel for their citizens between\n                  them and the three British Crown Dependencies of Jersey, Guernsey and the Isle of Man, which are\n                  outside the European Union. As per Gibraltar, which is a British Overseas Territory, it is neither\n                  part of the Schengen Area nor the Common Travel Area.\n                ")])])], 1)], 1)], 1), _vm._v(" "), _c('div', {
     staticClass: "md-layout-item"
   }, [_c('md-card', {
     staticClass: "md-card-example"

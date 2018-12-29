@@ -44,11 +44,14 @@
                 <md-card-header>
                   <h2 class="md-title"> EU member states with opt-outs</h2>
                   <div class="md-subhead">
-                   Upon the creation of the Schengen Area, most of the countries that were members of the European Union block, signed the agreement. However, two of the following opted out:
-
-the Republic of Ireland
-the United Kingdom
-Both of them maintain a Common Travel Area with passport-free travel for their citizens between them and the three British Crown Dependencies of Jersey, Guernsey and the Isle of Man, which are outside the European Union. As per Gibraltar, which is a British Overseas Territory, it is neither part of the Schengen Area nor the Common Travel Area.
+                    Upon the creation of the Schengen Area, most of the countries that were members of the European
+                    Union block, signed the agreement. However, two of the following opted out:
+                    the Republic of Ireland
+                    the United Kingdom
+                    Both of them maintain a Common Travel Area with passport-free travel for their citizens between
+                    them and the three British Crown Dependencies of Jersey, Guernsey and the Isle of Man, which are
+                    outside the European Union. As per Gibraltar, which is a British Overseas Territory, it is neither
+                    part of the Schengen Area nor the Common Travel Area.
                   </div>
                 </md-card-header>
               </md-card-area>
@@ -59,16 +62,10 @@ Both of them maintain a Common Travel Area with passport-free travel for their c
           <div class="md-layout-item">
 
             <md-card class="md-card-example">
-
-
-
-
               <md-card-content>
                 <h3 class="md-subheading">When did you fly to europe? </h3>
                 <md-datepicker v-model="date">
-
                 </md-datepicker>
-
               </md-card-content>
 
               <md-card-content>
@@ -89,26 +86,10 @@ Both of them maintain a Common Travel Area with passport-free travel for their c
                 </div>
               </md-card-content>
             </md-card>
-
-
-
-
-
-
-
-
-
-
-
-
-
           </div>
-       
         </div>
-
       </md-app-content>
     </md-app>
-
   </div>
 </template>
 
@@ -162,12 +143,7 @@ Both of them maintain a Common Travel Area with passport-free travel for their c
     padding-right: 0.5rem;
   }
 
-  .md-card {
-    width: 320px;
-    margin: 4px;
-    display: inline-block;
-    vertical-align: top;
-  }
+
 
   .md-card-example .md-subhead .md-icon {
     width: 16px;
@@ -176,7 +152,7 @@ Both of them maintain a Common Travel Area with passport-free travel for their c
     font-size: 16px !important;
   }
 
-  .md-card-example .md-subhead span {
+  .md-card-example .md-subhead  {
     vertical-align: middle;
   }
 
